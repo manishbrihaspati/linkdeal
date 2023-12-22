@@ -1,0 +1,99 @@
+.mainDiv {
+    background-color: white;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.main_content{
+    position: relative;
+    margin-top: 0;
+}
+.loginImg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.loginLogo {
+    width: 100%;
+}
+.LoginFormSection{
+    width: 400px;
+    /* width: 420px; */
+}
+.CheckBoxInput input {
+    display: inline;
+    width: auto;
+    cursor: pointer;
+    position: relative;
+    top: 1.2px;
+    margin-right: 5px;
+}
+.CheckBoxInput label {
+    font-weight: bold;
+    text-decoration: none;  
+    color: black;
+    cursor: pointer;
+    width: auto;
+}
+.forgotPass {
+    text-align: right;
+}
+
+.forgotPass a {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.loginDivide hr {
+    width: 43%;
+    margin-top: 12px;
+}
+.btnArea .icon {
+    width: 30%;
+    text-align: center;
+    background-color: #9303E6 !important;
+    display: inline;
+    cursor: pointer;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+.btnArea .icon svg {
+    width: 18px;
+    height: 18px;
+    overflow: visible;
+    opacity: unset;
+    z-index: 1;
+    fill: rgb(255, 255, 255);
+}
+
+.formControl .icon {
+    position: relative;
+    text-align: right;
+    top: -40px;
+    right: -92%;
+
+    cursor: pointer;
+    display: inline;
+}
+.formControl .icon svg { 
+    width: 16px;
+    height: 16px;
+    overflow: visible;
+    opacity: 1;
+    z-index: 1;
+    fill: rgb(133, 133, 133);
+}
+
+@media (max-width: 770px) {
+    .loginImg{
+      display: none;
+    }
+  }
+
+
+@media (max-width: 770px ) and (min-width: 450px ) {
+    .loginLogo{
+        width: 400px;
+    }
+  }

@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.topbar {
+    position: fixed;
+    background-color: white;
+    width: 92%;
+    z-index: 11;
+    top: 0;
+    padding-top: 10px;
+}
+.main_content {
+    position: relative;
+    margin-top: 62px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #9303e6 !important;
+    border: #9303e6 !important;
+    font-weight: bold;
+    color: white !important;
+    font-size: 16px;
+    padding: 14px 14px !important;
+}
+
+.commonIcon {
+    width: 25px;
+    height: 25px;
+    overflow: visible;
+    opacity: 1;
+    z-index: 1;
+    fill: rgb(0, 0, 0);
+}
+.commonIconWhite {
+    width: 30%;
+    height: 30%;
+    overflow: visible;
+    opacity: 1;
+    z-index: 1;
+    fill: rgb(255, 255, 255);
+}
+
+.commonLink {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar {
+    background-color: #9303e6 !important;
+    position: fixed;
+    /* width: 85px; */
+    width: 6%;
+    border-radius: 0px 5px 5px 0px;
+    height: 100vh;
+    padding: 10px 0px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+/* 
+.navbar{
+    margin-bottom: 20%;
+} */
+
+.Sidelogo {
+    flex: 0 0 10%;
+}
+.sideMenu {
+    flex: 0 0 80%;
+}
+
+.menu {
+    margin: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding: 12px 0px;
+    margin-top: 10px;
+}
+
+.activeMenu {
+    background: #2d2d2d;
+}
+.content_area {
+    position: relative;
+    width: 94%;
+    left: 6%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.content {
+    width: 100%;
+    position: relative;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.card {
+    border-color: rgb(214, 214, 214);
+    border-radius: 10px;
+}
+
+.btn-connect {
+    background-color: black;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 24px;
+    transition: all 0.2s linear;
+}
+
+.btn-connect:hover {
+    border: black 1px solid !important ;
+}
+
+.extensionImg {
+    background-color: #9303e6 !important;
+    width: 60%;
+    margin: auto;
+    padding: 25px 15px;
+    border-radius: 15px;
+}
+
+.setting_chip {
+    cursor: pointer;
+    background-color: rgb(226, 226, 226);
+    border-radius: 30px;
+    padding: 2px 16px;
+    margin: auto 5px;
+}
+
+.formControl label {
+    display: block;
+    font-weight: bold;
+}
+.formControl {
+    margin: 10px auto;
+    height: 80px;
+}
+.formControl input {
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background: #efefef;
+    width: 100%;
+    margin: 5px auto;
+
+    padding: 13px 10px;
+}
+
+.formControl textarea {
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    background: #efefef;
+    width: 100%;
+    margin: 5px auto;
+    padding: 13px 10px;
+}
+
+.connectionUserImg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+.action .btn {
+    width: 30px;
+    height: 30px;
+    padding: 0px !important ;
+}
+
+.action .btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+.pr-0 {
+    padding-right: 0;
+}
+.hamburger {
+    display: none;
+}
+
+.sidebarOverlay{
+    background: #00000069;
+    display: none;
+    height: 100%;
+    max-height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+/* ========== for mobile view =========== */
+@media (max-width: 568px) {
+    .mobileHidden{
+        display: none;
+    }
+    .sidebar {
+        width: 0;
+        z-index: 111;
+        transition: .2s all linear;
+    }
+    .content_area {
+        width: 100%;
+        left: 0;
+    }
+    .hamburger {
+        display: inline;
+        width: auto;
+    }
+    .sidebarOverlay{
+        transition: .5s all linear;
+    }
+    .hamburger svg {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        margin-right: 20px;
+        top: -3px;
+    }
+    .topbar {
+        width: 100%;
+    }
+    .activeSidebar {
+        display: flex;
+        width: 30%;
+    }
+}
